@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toggle-sidebar">
+        <button class="menu-icon-wrapper">
+            <div class="menu-icon"></div>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <main class="main cards-holder">
+                <!-- Cards -->
+                <div id="main" class="cards-holder"></div>
+                <link rel="stylesheet" href="./css/cards.css" >
+                <!-- Cards end -->
+
+                 <button class="btn__more">
+                     <img src="./img/icons/plus-circle.svg" alt="more">
+                     Show more
+                 </button>
+            </main>
+
+            <aside class="sidebar">
+
+
+
+                <form>
+                    <div class="widget">
+                        <div class="widget__title">
+                            Близость к метро
+                        </div>
+                        <div class="widget__body">
+    
+                            <div class="location">
+                                <div class="location__row">
+                                    <input type="checkbox" data-location id="location-01" checked class="location__checkbox">
+                                    <label class="location__btn" for="location-01"> &lt10</label>
+    
+                                    <input type="checkbox" data-location id="location-02" class="location__checkbox">
+                                    <label class="location__btn"for="location-02">10-20</label>
+    
+                                    <input type="checkbox" data-location id="location-03" class="location__checkbox">
+                                    <label class="location__btn"for="location-03">20-30</label>
+    
+                                    <input type="checkbox" data-location  id="location-04" class="location__checkbox">
+                                    <label class="location__btn"for="location-04">30+</label>                           
+                                </div>
+                                <div class="location__row">
+                                    <input type="checkbox" id="location-05" class="location__checkbox">
+                                    <label class="location__btn"for="location-05">any</label>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="widget">
+                        <div class="widget__title">
+                            Близость к метро
+                        </div>
+                        <div class="widget__body">
+    
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="tern" checked>
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">Любой</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="tern">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">Сдан</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="tern">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">В этом году</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" class="radio__real" name="tern">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">В следующем год</span>
+                            </label>
+    
+                        </div>
+                    </div>
+    
+                    <div class="widget">
+                        <div class="widget__title">
+                            Близость к метро
+                        </div>
+                        <div id="check_filter" class="widget__body">
+
+                            <div id="checkList">   
+                            <label class="checkbox ">
+                                <input type="checkbox" class="checkbox__real" name="value-01" >
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">З аквапарком</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__real" name="value-02">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Готельний комплекс</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__real" name="value-03">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Клубний готель</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__real" name="value-04">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Заміський готель</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__real" name="value-05">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Оздоровчий комплекс</span>
+                            </label>
+                            
+                                <label class="checkbox checkbox--hidden">
+                                    <input type="checkbox" class="checkbox__real" name="value-06">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__title">СПА-готель</span>
+                                </label>
+                                <label class="checkbox checkbox--hidden">
+                                    <input type="checkbox" class="checkbox__real" name="value-07">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__title">Приватний готель</span>
+                                </label>
+                                <label class="checkbox checkbox--hidden">
+                                    <input type="checkbox" class="checkbox__real" name="value-08">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__title">Парк-готель</span>
+                                </label>
+                                </div> 
+                            
+                            <button data-options="hidden" class="widget__btn-show-hidden">Show more</button>
+                        </div>
+                    </div>
+    
+                    <div class="widget">
+                        <div class="widget__body">
+    
+                            <label class="toggle">
+                                <input type="checkbox" class="toggle__real" name="tern" checked>
+                                <span class="toggle__fake"></span>
+                                <span class="toggle__title">sale</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget__body">
+                            <button class="form-btn form-btn--submit">Apply</button>
+                            <button type="reset" class="form-btn">
+                                <img src="./img/icons/x.svg" alt="Cancel">
+                                Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+        </div>
+    </div>
+    
+    <script src="js/root.js"></script>
+    <script src="js/hotels.js"></script>
+    <script src="js/renderHotels.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
